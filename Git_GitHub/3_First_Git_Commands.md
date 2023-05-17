@@ -1,5 +1,5 @@
 # First Git Commands 
-**[DW]** The episode before this is "Git and Github" which is about concept. Here, this episode moves to practical. If we provide a link to the setup instruction, it will help with the transition from concept to practical. [/DW]
+**[DW]** The episode before this is "Git and Github" which is about concept. Here, this episode moves to hands-on use of Git. If we provide a link to the setup instruction, it will help with the transition from concept to practical. [/DW]
 
 You should have already completed the setup instructions for this workshop and have Git installed. Launch a command line environment (in Windows launch “Git Bash” from the Start Menu, on Linux or Mac start a new Terminal). We will use this command line interface throughout these materials, we prefer this for educational reasons because the command line is a common environment for all the operating systems.
 

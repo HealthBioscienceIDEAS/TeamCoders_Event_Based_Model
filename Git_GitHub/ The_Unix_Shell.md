@@ -10,7 +10,7 @@ The prompt is followed by a text cursor, a character that indicates the position
 
 ## **Navigate through directories (folders), and nested folders.**
 
-The operating system responsible for managing files and directories is called the file system. It organizes our data into files, which hold information, and directories (also called ‘folders’), which contain files or other directories. 
+The operating system responsible for managing files and directories is called the file system. It organises our data into files, which hold information, and directories (also called ‘folders’), which contain files or other directories. 
 
 Several commands are frequently used to create, inspect, rename, and delete files and directories. The most frequent one is to know how to navigate in the directories (folders).
 To find out where we are in the file system, we run the command `pwd` (which stands for ‘**p**rint **w**orking **d**irectory').

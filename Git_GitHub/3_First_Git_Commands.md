@@ -1,12 +1,14 @@
 # First Git Commands 
 **[DW]** The episode before this is "Git and Github" which is about concept. Here, this episode moves to hands-on use of Git. If we provide a link to the setup instruction, it will help with the transition from concept to practical. [/DW]
+**[MT]** I would move it to the 1_Git-and_GitHub and name it 1_Git-and_GitHub_firts_commands. [/MT]
 
-You should have already completed the setup instructions for this workshop and have Git installed. Launch a command line environment (in Windows launch “Git Bash” from the Start Menu, on Linux or Mac start a new Terminal). We will use this command line interface throughout these materials, we prefer this for educational reasons because the command line is a common environment for all the operating systems.
+You should have already completed the setup instructions for this workshop and have it installed. You might have launched a command line environment (in Windows launch “Git Bash” from the Start Menu, on Linux or Mac start a new Terminal). We will use this command line interface throughout these materials, we prefer this for educational reasons because the command line is a common environment for all the operating systems.
 
-You must provide some extra information before it is ready to interact with Git.
-The information is related to the person who uses Git and it gives the identity of the user in any project which you might work on your computer. In collaborative projects this is used to distinguish who has made what changes. You only need to perform the above commands once for each new computer Git is installed on.
+You must provide some extra information before it is ready to interact with git.
+The information is related to the person who uses git and it gives the identity of the user in any project which you might work on your computer. In collaborative projects this is used to distinguish who has made what changes. You only need to perform the above commands once for each new computer Git is installed on.
 
 **[DW]** A little more hand holding might be useful, i.e. show a picture of Bash, and then explain the git config commands. [/DW]
+**[MT]** OK I'll creare screen shots for eveything. I have created a presentation and it has short videos in it. That's why I havent got the images here.
 
 ```bash
  git config --global user.name "FIRST_NAME LAST_NAME"   # Use the name that you wish to be identified 

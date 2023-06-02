@@ -9,6 +9,7 @@ A repository in Git is a project in a "Folder". This folder contains all of the 
 GitHub is a service that hosts Git repositories in the cloud. Users could share a repository, and collaborate at various steps of the project.
 
 **[DW]** all the three images below are not showing [/DW]
+**[MT]** I know it only shows up in the local machine. do you know how to fix it? [/MT]
 
 ![Git_GitHub](./fig/image_1.png)
 

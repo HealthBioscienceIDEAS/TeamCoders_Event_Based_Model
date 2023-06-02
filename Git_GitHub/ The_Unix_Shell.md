@@ -184,7 +184,6 @@ Let’s type in a few lines of text. Once we’re happy with our text, we can pr
 
 
 ## **Move one file over another (overwrite)** 
-**[DW]** This order should be the other way around - create quotes.txt, then move text1.txt to quotes.txt to demonstrate overwriting) [/DW]
 In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for 'move', to quote.txt:
 First thing to do is to create the file `quotes.txt`  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
 (Just type the commands without the comments in green)
@@ -202,17 +201,16 @@ Output
 ```
 This overwrites what is in quotes.txt with the content of the test1.txt, so it has to be used with caution.
 ### **Move file to another directory**
-Lets say that we want to move the file data.doc from the chapter_1 folder to the directory above it, which is project_1. We again use ***mv*** but with different arguments.
+Lets say that we want to move the file (animals.csv) from the chapter_1 folder to one directory (up) or directory above which is (project_1), and then it's subdirectory (chapter_2). We again use ***mv*** but with different arguments.
 
 **[DW]** Need example, something like this?
+**[MT]** I give thsi example to demonstrate that we can copy the file (animals.csv)  in another directory/subdirectory (../chapter_2/animals.csv)  and show that it doesnt exist in the firts dicrectory any longer.
 
-```bash
-mv data.doc ../
-```
 
-To move in across the directory structure, let's say we are at /Users/mary/project_1/chapter_1, we want to move animals.csv there to chapter_2:
+To move in across the directory structure, let's say we are at /Users/mary/project_1/chapter_1, we want to move animals.csv there to /Users/mary/project_1/chapter_2:
 
-**[DW]** the animals.csv (in chapter_2) is not necessary, or do you mean to explain another topic?[/DW]
+**[DW]** the animals.csv (in chapter_2) is not necessary, or do you mean to explain another topic?[/DW] 
+**[MT]** i wanted to show that we move files (not necessary documents) from one directory to othe directory with difefrent path
 
 ```bash
 mv animals.csv ../chapter_2/animals.csv   
@@ -224,9 +222,10 @@ Output
 quotes.txt	
 
 ```
-In the command above (../chapter_2), the .. denotes to change the path one directory up (which is project_1 ) and then directs it into chapter_2. 
+In the command above (../chapter_2), the .. denotes to change the path one directory up (which is project_1 ) and then directs it into the project_1 subdirectory chapter_2. 
 
 **[DW]** I think it's plural animals.csv [/DW]
+**[MT]** its the name of a file which is singular
 
 The animals.csv doesn't exist at the chapter_1 folder anymore. When you go up one directory at the project_1 folder and then into the chapter_2 folder (../chapter_2) look in the file list, we will animals.csv there.
 

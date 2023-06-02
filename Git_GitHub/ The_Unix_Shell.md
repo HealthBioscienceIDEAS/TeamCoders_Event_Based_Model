@@ -1,22 +1,20 @@
 # **Basic Unix Shell (Terminal) Commands**
 
-If you haven't used the command line at the terminal before, we show here the basic commands to know, and you will use them while working with Git.
+If you haven't used the Unix Shell before, we show here the basic commands to know, and you will use them while working with Git.
 
- We recommend you write the commands down in a list and refer to them until you get familiar.
+We recommend you write the commands down in a list and refer to them until you get familiar with them.
 
-The shell in the window typically uses the (dollar symbol) as the prompt . 
-At MacOS, the shell opens in the Terminal application and uses the % prompt. In the examples for this lesson, I'll show the prompt as $. Most importantly: when typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it. Also, note that you have to press the Enter key after you type a command to execute it.
+The shell in the window typically uses the dollar symbol (`$`) as the prompt. On MacOS, the shell opens in the Terminal application and uses the % prompt. In the examples for this lesson, I'll show the prompt as $. Most importantly: when typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it. Also, note that you have to press the Enter key after you type a command to execute it.
 
 The prompt is followed by a text cursor, a character that indicates the position where your typing will appear. 
 
 ## **Navigate through directories (folders), and nested folders.**
 
-The operating system responsible for managing files and directories is called the file system. It organizes our data into files, which hold information, and directories (also called ‘folders’), which contain files or other directories. 
+The operating system responsible for managing files and directories is called the file system. It organises our data into files, which hold information, and directories (also called ‘folders’), which contain files or other directories. 
 
-Several commands are frequently used to create, inspect, rename, and delete files and directories. The most frequent one is to know to navigate in directories (folders).
-Let's say that we have a home directory `/Users/mary/`
-We run the command `pwd` (which stands for ‘**p**rint **w**orking **d**irectory').
-If we are at the directory, /Users/mary and run the command.
+Several commands are frequently used to create, inspect, rename, and delete files and directories. The most frequent one is to know how to navigate in the directories (folders).
+To find out where we are in the file system, we run the command `pwd` (which stands for ‘**p**rint **w**orking **d**irectory').
+Let's say that we have a home directory `/Users/mary/`. If we are at this directory (/Users/mary/), we run the command:
 
 
 ```bash
@@ -29,18 +27,18 @@ The output will be the home directory
 /Users/mary 
 
 ```
-To see what is into a directory use the ls command: To find the usage of ls type **man ls** (which stand for manual of ls)
+To see what is in a directory use the `ls` command: To find the usage of `ls` type **man ls** (which stand for manual of ls)
 
 ***ls*** lists all the files which are visual in the current directory if you open the project_1 folder on your desktop.
 
 
-For complete listing of all the files it's better to run ***ls -a*** (which is  listing  --all and don't ignore entries starting with . all these are hidden files)
+For complete listing of all the files it's better to run ***ls -a*** (which is listing all content and don't ignore entries starting with . all these are hidden files)
 
 ```bash
 ls -a
 ```
 
-Output : For example is the following (it will not be  same at your directory!!)
+Output : An example is the following (it will not be same at your directory!!)
 ```bash
 
 .		 Pictures		data_vis.py
@@ -49,10 +47,10 @@ Output : For example is the following (it will not be  same at your directory!!)
 
 ```
 The files .DS_store and .git and everything that starts with (.) or(..) are hidden directories and we can only detect them using the *ls -a* command
-The commands **ls -a** list all the files (and the hidden ones),  and **ls -F**, are the same. The **ls -F** lists the directories with the/ ending 
+The commands **ls -a** list all the files (and the hidden ones),  and **ls -F**, are the same. The **ls -F** lists the directories with the `/` ending 
 
-To change directory the commands 'cd' and 'cd ..' could be used (both stand for change directory)
-cd , shortcut to go back to the user’s home directory. the cd..  goes back to one level directory.
+To change directory the commands `cd` and `cd ..` could be used (both stand for change directory).
+`cd` is shortcut to go back to the user’s home directory. The `cd ..`  goes back to one level "up" the in directory.
 
 Lets say I am  in the directory \Users\mary\Pictures\Flowers
 
@@ -65,7 +63,7 @@ Output:
 Users\mary\Pictures\Flowers
 ```
 
-\Users\mary (which is the homedirectory)
+\Users\mary (which is the home directory)
 
 
 and if we start from the   \Users\mary\Pictures\Flowers
@@ -94,7 +92,7 @@ Output
 ```
 
 
-Next we make a new directory called chapter_1 and check the list of files again. 
+Next we make a new directory called chapter_1 
 
 ```bash
 mkdir project_1
@@ -111,7 +109,7 @@ mkdir chapter_1
 mkdir chapter_2
 ```
 
-Create a files using the **touch** command
+Create a files using the **touch** command. The `touch` command creates the new file in the directory without opening the file to edit.
 
 ```bash
 touch text.txt
@@ -166,8 +164,8 @@ Output
 ```
 
 ## **Open an editor from terminal**
-Writing a document using the terminal is not as straight forward.
-The way to write a text file is to open an editor called **nano** 
+Writing a document using the terminal is not that straight forward.
+The way to write a text file is to open an editor called **nano**.
 
 When we say, ‘nano is a text editor’ we really do mean ‘text’: it can only work with plain character data, not tables, images, or any other human-friendly media. We use it in examples because it is one of the least complex text editors. However, because of this trait, it may not be powerful enough or flexible enough for the work you need to do after this workshop. We use it to create text files and during the workshops we modify them to demonstrate the work with Git and GitHub. Here I show how to create a .doc file but usually we use nano for .txt files
 
@@ -186,7 +184,7 @@ Let’s type in a few lines of text. Once we’re happy with our text, we can pr
 
 
 ## **Move one file over another (overwrite)** 
-In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt  which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for ‘move’to quote.txt:
+In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for 'move', to quote.txt:
 First thing to do is to create the file `quotes.txt`  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
 (Just type the commands without the comments in green)
 
@@ -203,9 +201,16 @@ Output
 ```
 This overwrites what is in quotes.txt with the content of the test1.txt, so it has to be used with caution.
 ### **Move file to another directory**
-Lets ay that we want to move the file data.doc from the chapter_1 folder to the oen above directory which is the project_1. We again use ***mv*** but with different arguments.
+Lets say that we want to move the file (animals.csv) from the chapter_1 folder to one directory (up) or directory above which is (project_1), and then it's subdirectory (chapter_2). We again use ***mv*** but with different arguments.
 
-To move in the nesting :  /Users/mary/project_1/chapter_1
+**[DW]** Need example, something like this?
+**[MT]** I give thsi example to demonstrate that we can copy the file (animals.csv)  in another directory/subdirectory (../chapter_2/animals.csv)  and show that it doesnt exist in the firts dicrectory any longer.
+
+
+To move in across the directory structure, let's say we are at /Users/mary/project_1/chapter_1, we want to move animals.csv there to /Users/mary/project_1/chapter_2:
+
+**[DW]** the animals.csv (in chapter_2) is not necessary, or do you mean to explain another topic?[/DW] 
+**[MT]** i wanted to show that we move files (not necessary documents) from one directory to othe directory with difefrent path
 
 ```bash
 mv animals.csv ../chapter_2/animals.csv   
@@ -217,12 +222,15 @@ Output
 quotes.txt	
 
 ```
-In the command above the  ## the .. denotes to change the path one directory up (here is project_1 ) and then directs it into  chapter_2. 
+In the command above (../chapter_2), the .. denotes to change the path one directory up (which is project_1 ) and then directs it into the project_1 subdirectory chapter_2. 
 
-The animal.csv doesn't exists at the chapter_1 folder anymore
-When you go up one directory at the project_1 folder and then into the chapter_2 folder (../chapter_2) look in the file list, we will found it there.
+**[DW]** I think it's plural animals.csv [/DW]
+**[MT]** its the name of a file which is singular
+
+The animals.csv doesn't exist at the chapter_1 folder anymore. When you go up one directory at the project_1 folder and then into the chapter_2 folder (../chapter_2) look in the file list, we will animals.csv there.
 
 (Just type the commands without the comments in green)
+
 
 ```bash
 cd ../chapter_2  ## (..) goes up one directory  (here is project_ 1) and then in the chapter_2 subdirectories
@@ -234,7 +242,7 @@ Output
 ```bash
 animals.csv
 ```
-The animals.csv has moved to the project_1/ chapter_2 folder.
+The animals.csv has moved to the project_1/chapter_2 folder.
 Now move back to the project_1 directory 
 ```bash
 cd ..
@@ -247,7 +255,7 @@ Output
 ## **Copying files and directories**
 
 The ***cp*** command works very much like ***mv***, except it copies a file instead of moving it. We can check that it did the right thing using ***ls*** with two paths as arguments — like most Unix commands, ls can be given multiple paths at once:
-You should be in the project directory(/Users/mary/project_1/)
+You should be in the project directory (/Users/mary/project_1/)
 (Just type the commands without the comments in green)
 
 ```bash
@@ -274,7 +282,7 @@ It is  the sentence we wrote with the nano editor
 
 
 
-If we want to **copy a folder (directory)** and all its contents by using the recursive option -r, e.g. to back up a directory:
+If we want to **copy a folder (directory)** and all its contents, we do this by using the recursive option `-r`, e.g. to back up a directory:
 
 ```bash
 cp -r chapter_1 chapter_1_backup
@@ -306,10 +314,10 @@ Output
 ```bash
 data.doc	hello.py	quotes.txt
 ```
-The output is the same in both folders as the folder (chapter_1_backup/) was copied from the (chapter_1)
+The output is the same in both folders as the folder chapter_1_backup/ was copied from the folder chapter_1.
 ## Delete files or directories
 You should be in the project directory(/Users/mary/project_1/)
-If we want to **delete a file** we use the **rm** file command which stands for remove
+If we want to **delete a file** we use the **rm** file command which stands for remove.
 
 ```bash
 rm text.txt 
@@ -320,7 +328,7 @@ Output
 backup.txt		chapter_1_backup/	intro.txt
 chapter_1/		chapter_2/cd 
 ```
-The file text.txt doesn't exist anymore and it's been deleted forever. Beware that the unix shell doesn't have  a trash bin and we can recover deleted files. 
+The file text.txt doesn't exist anymore and it's been deleted forever. Beware that the unix shell doesn't have a trash bin and we can recover deleted files. 
 
 
 If we want to *delete a folder* we use the ***rm -r*** file command
@@ -334,7 +342,7 @@ Output
 backup.txt		chapter_1_backup/
 chapter_1/		intro.txt
 ```
-The folder chapter_2  doesn't exist anymore. 
+The folder chapter_2 doesn't exist anymore. 
 
 
 ## Summary of the most common commands 

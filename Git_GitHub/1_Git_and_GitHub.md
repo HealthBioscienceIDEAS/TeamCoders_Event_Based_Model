@@ -1,12 +1,15 @@
 # Git and GitHub
 
 Git is the most widely used version control software (VCS). It is a very powerful tool to know, and we are here to learn how to get started with it. 
-Git and GitHub are two different tools to facilitate version control, collaboration and sharing. It's important to understand that Git is not GitHub
+Git and GitHub are two different tools to facilitate version control, collaboration and sharing. It's important to understand that Git is not GitHub.
 
 Git is a software that operates locally at your machine. 
-A Git repository in Git, is a project in a "Folder". It contains all of the files and folders associated with your project and all the various versions of them over time. That helps to manage file changes. If you are just using Git for version control of the repository and you don't want to share your projects, you might never use GitHub.
+A repository in Git is a project in a "Folder". This folder contains all of the files and folders associated with your project and all the various versions of them over time. That helps to manage file changes. If you are just using Git for version control of the repository and you don't want to share your projects, you might never use GitHub.
 
 GitHub is a service that hosts Git repositories in the cloud. Users could share a repository, and collaborate at various steps of the project.
+
+**[DW]** all the three images below are not showing [/DW]
+**[MT]** I know it only shows up in the local machine. do you know how to fix it? [/MT]
 
 ![Git_GitHub](./fig/image_1.png)
 
@@ -14,12 +17,12 @@ GitHub is a service that hosts Git repositories in the cloud. Users could share 
 
 A repository contains all of the files and folders associated with your project. It also includes the revision history of each file. The file history is a series of snapshots in time, known as commits. A commit tells Git that you made some changes that you want to record.
 
-When you make a commit in Git you will see “commit to main.” This refers to the default branch, which can be thought of as the production-ready version of your project.
-If you want to share your repository you connect to a GitHub account. You need to create a GitHub account for that purpose. In the GitHub the repository could be accessible by multiple users.
+When you make a commit in Git you will see “commit to main.” This refers to the default branch 'main', which can be thought of as the production-ready version of your project.
+If you want to share your repository, you connect to a GitHub account. You need to create a GitHub account for that purpose. In GitHub the repository could be accessible by multiple users.
 
 ![Git_upload](./fig/git_checkout.png)
 
-Your collaborators can download the GitHub repository to their local computer and work on a part of a project making a branch. Then they upload their work and request a review before is merged into the main branch.
+Your collaborators can download the GitHub repository to their local computer and work on a part of a project making a branch. Then they upload their work and request a review before it is merged into the main branch.
 
 ![Git_upload](./fig/image_3.png)
 
